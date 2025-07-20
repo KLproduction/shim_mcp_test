@@ -1,8 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 // Placeholder reducer to avoid warning
-function placeholderReducer(state = {}, action: any) {
-  return state;
+interface PlaceholderAction {
+  type: string
+}
+
+function placeholderReducer(state = {}, action: PlaceholderAction) {
+  return state
 }
 
 export const store = configureStore({
